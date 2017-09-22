@@ -1,0 +1,405 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCOUNTPERSIST_H_	src/Persistence/Account_Persist.h	9;"	d
+ACCOUNT_DATA_FILE	src/Persistence/Account_Persist.c	/^static const char ACCOUNT_DATA_FILE[] = "Account.dat";$/;"	v	file:
+ACCOUNT_DATA_TEMP_FILE	src/Persistence/Account_Persist.c	/^static const char ACCOUNT_DATA_TEMP_FILE[] = "AccountTmp.dat";$/;"	v	file:
+ACCOUNT_H_	src/Service/Account.h	8;"	d
+ACCOUNT_PAGE_SIZE	src/View/Account_UI.h	/^static const int ACCOUNT_PAGE_SIZE = 3;$/;"	v
+ACCOUNT_UI_H_	src/View/Account_UI.h	9;"	d
+Account_Perst_CheckAccFile	src/Persistence/Account_Persist.c	/^int Account_Perst_CheckAccFile() {$/;"	f
+Account_Perst_DeleteByID	src/Persistence/Account_Persist.c	/^int Account_Perst_DeleteByID(int id) {$/;"	f
+Account_Perst_Insert	src/Persistence/Account_Persist.c	/^int Account_Perst_Insert(const account_t *data) {$/;"	f
+Account_Perst_SelByName	src/Persistence/Account_Persist.c	/^int Account_Perst_SelByName(char usrName[], account_t *buf) {$/;"	f
+Account_Perst_SelectAll	src/Persistence/Account_Persist.c	/^int Account_Perst_SelectAll(account_list_t list) {$/;"	f
+Account_Perst_SelectByID	src/Persistence/Account_Persist.c	/^int Account_Perst_SelectByID(int id, account_t *buf) {$/;"	f
+Account_Perst_Update	src/Persistence/Account_Persist.c	/^int Account_Perst_Update(const account_t * data) {$/;"	f
+Account_Srv_Add	src/Service/Account.c	/^inline int Account_Srv_Add(const account_t *data){$/;"	f
+Account_Srv_DeleteByID	src/Service/Account.c	/^inline int Account_Srv_DeleteByID(int usrID){$/;"	f
+Account_Srv_FetchAll	src/Service/Account.c	/^inline int Account_Srv_FetchAll(account_list_t list){$/;"	f
+Account_Srv_FetchByID	src/Service/Account.c	/^inline int Account_Srv_FetchByID(int usrID, account_t *buf){$/;"	f
+Account_Srv_FetchByName	src/Service/Account.c	/^inline int Account_Srv_FetchByName(char usrName[], account_t *buf){$/;"	f
+Account_Srv_FindByUsrName	src/Service/Account.c	/^account_node_t * Account_Srv_FindByUsrName(account_list_t list, char usrName[]) {$/;"	f
+Account_Srv_InitSys	src/Service/Account.c	/^void Account_Srv_InitSys(){$/;"	f
+Account_Srv_Logout	src/Service/Account.c	/^int Account_Srv_Logout(){$/;"	f
+Account_Srv_Modify	src/Service/Account.c	/^inline int Account_Srv_Modify(const account_t *data){$/;"	f
+Account_Srv_Verify	src/Service/Account.c	/^int Account_Srv_Verify(char usrName[], char pwd[]){$/;"	f
+Account_UI_Add	src/View/Account_UI.c	/^int Account_UI_Add() {$/;"	f
+Account_UI_Delete	src/View/Account_UI.c	/^int Account_UI_Delete(char usrName[]) {$/;"	f
+Account_UI_MgtEntry	src/View/Account_UI.c	/^void Account_UI_MgtEntry() {$/;"	f
+Account_UI_Modify	src/View/Account_UI.c	/^int Account_UI_Modify(char usrName[]) {$/;"	f
+CC	Makefile	/^CC = gcc$/;"	m
+COMMON_H_	src/Common/Common.h	9;"	d
+COMMON_PERSIST_H_	src/Persistence/EntityKey_Persist.h	9;"	d
+C_FLAGS	Makefile	/^C_FLAGS = -DDEBUG -c -Wall -Wextra -ggdb -I.$/;"	m
+C_OBJECTS	Makefile	/^C_OBJECTS = $(patsubst %.c, %.o, $(C_SOURCES))$/;"	m
+C_SOURCES	Makefile	/^C_SOURCES = $(shell find . -name "*.c")$/;"	m
+Change_Passwd	src/View/Account_UI.c	/^void Change_Passwd(){$/;"	f
+DateCmp	src/Common/Common.c	/^int DateCmp(user_date_t dt1, user_date_t dt2) {$/;"	f
+DateNow	src/Common/Common.c	/^user_date_t DateNow() {$/;"	f
+DisplayQueryPlay	src/View/Query_Play_UI.c	/^void DisplayQueryPlay(void)$/;"	f
+ENTITYKEY_H_	src/Service/EntityKey.h	9;"	d
+ENTITY_KEY_FILE	src/Persistence/EntityKey_Persist.c	/^static const char ENTITY_KEY_FILE[] = "EntityKey.dat";$/;"	v	file:
+EntKey_Perst_GetNewKeys	src/Persistence/EntityKey_Persist.c	/^long EntKey_Perst_GetNewKeys(char entName[], int count) {$/;"	f
+EntKey_Srv_Add2List	src/Service/EntityKey.c	/^inline void EntKey_Srv_Add2List(entkey_list_t keyList, long key) {$/;"	f
+EntKey_Srv_CheckExist	src/Service/EntityKey.c	/^inline int EntKey_Srv_CheckExist(entkey_list_t keyList, long key){$/;"	f
+EntKey_Srv_CompNewKey	src/Service/EntityKey.c	/^inline long EntKey_Srv_CompNewKey(char entName[]) {$/;"	f
+EntKey_Srv_CompNewKeys	src/Service/EntityKey.c	/^inline long EntKey_Srv_CompNewKeys(char entName[], int count) {$/;"	f
+LIST_H_	src/Common/List.h	9;"	d
+ListTickets	src/View/Ticket_UI.c	/^void ListTickets(void){$/;"	f
+List_AddHead	src/Common/List.h	41;"	d
+List_AddTail	src/Common/List.h	49;"	d
+List_DelNode	src/Common/List.h	78;"	d
+List_Destroy	src/Common/List.h	33;"	d
+List_ForEach	src/Common/List.h	92;"	d
+List_Free	src/Common/List.h	21;"	d
+List_FreeNode	src/Common/List.h	85;"	d
+List_Init	src/Common/List.h	15;"	d
+List_InsertAfter	src/Common/List.h	65;"	d
+List_InsertBefore	src/Common/List.h	57;"	d
+List_IsEmpty	src/Common/List.h	73;"	d
+List_Paging	src/Common/List.h	109;"	d
+MAIN_MENU_H_	src/View/Main_Menu.h	2;"	d
+MAX_TIMES	src/View/Account_UI.c	21;"	d	file:
+Main_Menu	src/View/Main_Menu.c	/^void Main_Menu(void) {$/;"	f
+PLAYPERSIST_H_	src/Persistence/Play_Persist.h	3;"	d
+PLAY_DATA_FILE	src/Persistence/Play_Persist.c	/^static const char PLAY_DATA_FILE[] = "Play.dat";$/;"	v	file:
+PLAY_DATA_FILE	src/Persistence/Query_Persist.c	/^static const char PLAY_DATA_FILE[] = "Play.dat";$/;"	v	file:
+PLAY_DATA_TEMP_FILE	src/Persistence/Play_Persist.c	/^static const char PLAY_DATA_TEMP_FILE[] = "PlayTmp.dat";$/;"	v	file:
+PLAY_H_	src/Service/Play.h	2;"	d
+PLAY_PAGE_SIZE	src/View/Play_UI.h	/^static const int PLAY_PAGE_SIZE=6;$/;"	v
+PLAY_RATE_ADULT	src/Service/Play.h	/^	PLAY_RATE_ADULT = 3$/;"	e	enum:__anon17
+PLAY_RATE_CHILD	src/Service/Play.h	/^	PLAY_RATE_CHILD = 1,$/;"	e	enum:__anon17
+PLAY_RATE_TEENAGE	src/Service/Play.h	/^	PLAY_RATE_TEENAGE = 2,$/;"	e	enum:__anon17
+PLAY_TYPE_CONCERT	src/Service/Play.h	/^	PLAY_TYPE_CONCERT=3  \/\/音乐会$/;"	e	enum:__anon16
+PLAY_TYPE_FILE	src/Service/Play.h	/^	PLAY_TYPE_FILE=1,     \/\/$/;"	e	enum:__anon16
+PLAY_TYPE_OPEAR	src/Service/Play.h	/^	PLAY_TYPE_OPEAR=2,   \/\/$/;"	e	enum:__anon16
+PLAY_UI_H_	src/View/Play_UI.h	3;"	d
+PROGRAM	Makefile	/^PROGRAM = TTMS$/;"	m
+Pageing_CurPage	src/Common/List.h	177;"	d
+Pageing_IsFirstPage	src/Common/List.h	185;"	d
+Pageing_IsLastPage	src/Common/List.h	188;"	d
+Pageing_TotalPages	src/Common/List.h	180;"	d
+Pagination_t	src/Common/List.h	/^}Pagination_t;$/;"	t	typeref:struct:__anon3
+Paging_Locate_FirstPage	src/Common/List.h	122;"	d
+Paging_Locate_LastPage	src/Common/List.h	128;"	d
+Paging_Locate_OffsetPage	src/Common/List.h	151;"	d
+Paging_ViewPage_ForEach	src/Common/List.h	142;"	d
+Play_Perst_DeleteByID	src/Persistence/Play_Persist.c	/^int Play_Perst_DeleteByID(int ID) {$/;"	f
+Play_Perst_Insert	src/Persistence/Play_Persist.c	/^int Play_Perst_Insert(const play_t *data) {$/;"	f
+Play_Perst_SelectAll	src/Persistence/Play_Persist.c	/^int Play_Perst_SelectAll(play_list_t list) {$/;"	f
+Play_Perst_SelectByID	src/Persistence/Play_Persist.c	/^int Play_Perst_SelectByID(int ID, play_t *buf) {$/;"	f
+Play_Perst_SelectByName	src/Persistence/Play_Persist.c	/^int Play_Perst_SelectByName(play_list_t list, char condt[]) {$/;"	f
+Play_Perst_Update	src/Persistence/Play_Persist.c	/^int Play_Perst_Update(const play_t *data) {$/;"	f
+Play_Srv_Add	src/Service/Play.c	/^inline int Play_Srv_Add(const play_t *data) {$/;"	f
+Play_Srv_DeleteByID	src/Service/Play.c	/^inline int Play_Srv_DeleteByID(int ID) {$/;"	f
+Play_Srv_FetchAll	src/Service/Play.c	/^inline int Play_Srv_FetchAll(play_list_t list) {$/;"	f
+Play_Srv_FetchByID	src/Service/Play.c	/^inline int Play_Srv_FetchByID(int ID, play_t *buf) {$/;"	f
+Play_Srv_FetchByName	src/Service/Play.c	/^inline int Play_Srv_FetchByName(play_list_t list, char condt[]){$/;"	f
+Play_Srv_FilterByName	src/Service/Play.c	/^int Play_Srv_FilterByName(play_list_t list, char filter[]){$/;"	f
+Play_Srv_Modify	src/Service/Play.c	/^inline int Play_Srv_Modify(const play_t *data) {$/;"	f
+Play_UI_Add	src/View/Play_UI.c	/^int Play_UI_Add(void)$/;"	f
+Play_UI_Delete	src/View/Play_UI.c	/^int Play_UI_Delete(int id){$/;"	f
+Play_UI_MgtEntry	src/View/Play_UI.c	/^void Play_UI_MgtEntry(int flag){$/;"	f
+Play_UI_Modify	src/View/Play_UI.c	/^int Play_UI_Modify(int id){$/;"	f
+QUERIES_MENU_H_	src/View/Queries_Menu.h	2;"	d
+QUERYPERSIST_H	src/Persistence/Query_Persist.h	2;"	d
+QUERY_PLAY_UI_H	src/View/Query_Play_UI.h	2;"	d
+Queries_Menu	src/View/Queries_Menu.c	/^void Queries_Menu(void){$/;"	f
+QueryTicket	src/View/Ticket_UI.c	/^int QueryTicket(int id){$/;"	f
+Query_PlayName	src/Persistence/Query_Persist.c	/^int Query_PlayName(char *playName, play_t *_play)$/;"	f
+Query_Schedule_By_PlayId	src/Persistence/Query_Persist.c	/^int Query_Schedule_By_PlayId(int playId, schedule_t *sched)$/;"	f
+Query_Studio_By_Schedule	src/Persistence/Query_Persist.c	/^void Query_Studio_By_Schedule(int id, studio_t *studio)$/;"	f
+SALEINGPERSIST_H	src/Persistence/Sale_Persist.h	2;"	d
+SALESANALYSIS_H_	src/Service/SalesAnalysis.h	8;"	d
+SALESANALYSIS_PAGE_SIZE	src/View/SalesAnalysis_UI.c	/^static const int SALESANALYSIS_PAGE_SIZE = 5;$/;"	v	file:
+SALESANALYSIS_UI_H_	src/View/SalesAnalysis_UI.h	9;"	d
+SALETICKET_UI_H_	src/View/Sale_UI.h	2;"	d
+SALE_DATA_FILE	src/Persistence/Sale_Persist.c	/^static const char SALE_DATA_FILE[] = "Sale.dat";$/;"	v	file:
+SALE_DATA_TEMP_FILE	src/Persistence/Sale_Persist.c	/^static const char SALE_DATA_TEMP_FILE[] = "SaleTmp.dat";$/;"	v	file:
+SALE_H_	src/Service/Sale.h	2;"	d
+SALE_RETURN	src/Service/Sale.h	/^	SALE_RETURN=-1	\/\/退票$/;"	e	enum:__anon10
+SALE_SELL	src/Service/Sale.h	/^	SALE_SELL=1,	\/\/买票$/;"	e	enum:__anon10
+SCHEDPERSIST_H_	src/Persistence/Schedule_Persist.h	2;"	d
+SCHEDULE_DATA_FILE	src/Persistence/Query_Persist.c	/^static const char SCHEDULE_DATA_FILE[] = "Schedule.dat";$/;"	v	file:
+SCHEDULE_DATA_FILE	src/Persistence/Schedule_Persist.c	/^static const char SCHEDULE_DATA_FILE[] = "Schedule.dat";$/;"	v	file:
+SCHEDULE_DATA_TEMP_FILE	src/Persistence/Schedule_Persist.c	/^static const char SCHEDULE_DATA_TEMP_FILE[] = "ScheduleTmp.dat";$/;"	v	file:
+SCHEDULE_H_	src/Service/Schedule.h	2;"	d
+SCHEDULE_PAGE_SIZE	src/View/Schedule_UI.h	/^static const int SCHEDULE_PAGE_SIZE=5;$/;"	v
+SCHEDULE_UI_H_	src/View/Schedule_UI.h	2;"	d
+SEATPERSIST_H_	src/Persistence/Seat_Persist.h	9;"	d
+SEAT_BROKEN	src/Service/Seat.h	/^	SEAT_BROKEN=9			\/\/损坏的座位$/;"	e	enum:__anon8
+SEAT_DATA_FILE	src/Persistence/Query_Persist.c	/^static const char SEAT_DATA_FILE[] = "Seat.dat";$/;"	v	file:
+SEAT_DATA_FILE	src/Persistence/Seat_Persist.c	/^static const char SEAT_DATA_FILE[] = "Seat.dat";$/;"	v	file:
+SEAT_DATA_TEMP_FILE	src/Persistence/Seat_Persist.c	/^static const char SEAT_DATA_TEMP_FILE[] = "SeatTmp.dat";$/;"	v	file:
+SEAT_GOOD	src/Service/Seat.h	/^	SEAT_GOOD=1,			\/\/有座位$/;"	e	enum:__anon8
+SEAT_H_	src/Service/Seat.h	9;"	d
+SEAT_NONE	src/Service/Seat.h	/^	SEAT_NONE=0,			\/\/空位$/;"	e	enum:__anon8
+SEAT_UI_H_	src/View/Seat_UI.h	9;"	d
+STUDIO_DATA_FILE	src/Persistence/Query_Persist.c	/^static const char STUDIO_DATA_FILE[] = "Studio.dat";$/;"	v	file:
+STUDIO_DATA_FILE	src/Persistence/Studio_Persist.c	/^static const char STUDIO_DATA_FILE[] = "Studio.dat";$/;"	v	file:
+STUDIO_DATA_TEMP_FILE	src/Persistence/Studio_Persist.c	/^static const char STUDIO_DATA_TEMP_FILE[] = "StudioTmp.dat";$/;"	v	file:
+STUDIO_H_	src/Service/Studio.h	8;"	d
+STUDIO_PAGE_SIZE	src/View/Studio_UI.c	/^static const int STUDIO_PAGE_SIZE = 4;$/;"	v	file:
+STUDIO_PERSIST_H_	src/Persistence/Studio_Persist.h	9;"	d
+STUDIO_UI_H_	src/View/Studio_UI.h	9;"	d
+Sale_Perst_DeleteByID	src/Persistence/Sale_Persist.c	/^int Sale_Perst_DeleteByID(int saleID) {$/;"	f
+Sale_Perst_Insert	src/Persistence/Sale_Persist.c	/^int Sale_Perst_Insert(const sale_t *data) {$/;"	f
+Sale_Perst_SelectByDate	src/Persistence/Sale_Persist.c	/^int Sale_Perst_SelectByDate(sale_list_t list, user_date_t stDate,$/;"	f
+Sale_Perst_SelectByUsrID	src/Persistence/Sale_Persist.c	/^int Sale_Perst_SelectByUsrID(sale_list_t list, int usrID, user_date_t stDate,$/;"	f
+Sale_Srv_Add	src/Service/Sale.c	/^inline int Sale_Srv_Add(const sale_t *data) {$/;"	f
+Sale_Srv_DeleteByID	src/Service/Sale.c	/^inline int Sale_Srv_DeleteByID(int saleID) {$/;"	f
+Sale_UI_MgtEntry	src/View/Sale_UI.c	/^void Sale_UI_MgtEntry() {$/;"	f
+Sale_UI_ReturnTicket	src/View/Sale_UI.c	/^void Sale_UI_ReturnTicket(){$/;"	f
+Sale_UI_SellTicket	src/View/Sale_UI.c	/^int Sale_UI_SellTicket(ticket_list_t tickList, seat_list_t seatList){$/;"	f
+Sale_UI_ShowScheduler	src/View/Sale_UI.c	/^void Sale_UI_ShowScheduler(int playID) {$/;"	f
+Sale_UI_ShowTicket	src/View/Sale_UI.c	/^void Sale_UI_ShowTicket(int schID){$/;"	f
+SalesAanalysis_UI_MgtEntry	src/View/SalesAnalysis_UI.c	/^void SalesAanalysis_UI_MgtEntry() {$/;"	f
+SalesAnalysis_Srv_CountTicketByID	src/Service/SalesAnalysis.c	/^long SalesAnalysis_Srv_CountTicketByID(sale_list_t list, int playID) {$/;"	f
+SalesAnalysis_Srv_FetchAll	src/Service/SalesAnalysis.c	/^inline int SalesAnalysis_Srv_FetchAll(salesanalysis_list_t list) {$/;"	f
+Schedule_Perst_DeleteByID	src/Persistence/Schedule_Persist.c	/^int Schedule_Perst_DeleteByID(int ID){$/;"	f
+Schedule_Perst_Insert	src/Persistence/Schedule_Persist.c	/^int Schedule_Perst_Insert(const schedule_t *data)$/;"	f
+Schedule_Perst_SelectAll	src/Persistence/Schedule_Persist.c	/^int Schedule_Perst_SelectAll(schedule_list_t list){$/;"	f
+Schedule_Perst_SelectByID	src/Persistence/Schedule_Persist.c	/^int Schedule_Perst_SelectByID(int ID, schedule_t *buf){$/;"	f
+Schedule_Perst_SelectByPlay	src/Persistence/Schedule_Persist.c	/^int Schedule_Perst_SelectByPlay(schedule_list_t list, int play_id){$/;"	f
+Schedule_Perst_Update	src/Persistence/Schedule_Persist.c	/^int Schedule_Perst_Update(const schedule_t *data){$/;"	f
+Schedule_Srv_Add	src/Service/Schedule.c	/^inline int Schedule_Srv_Add(const schedule_t *data) {$/;"	f
+Schedule_Srv_DeleteByID	src/Service/Schedule.c	/^inline int Schedule_Srv_DeleteByID(int ID) {$/;"	f
+Schedule_Srv_FetchAll	src/Service/Schedule.c	/^inline int Schedule_Srv_FetchAll(schedule_list_t list) {$/;"	f
+Schedule_Srv_FetchByID	src/Service/Schedule.c	/^inline int Schedule_Srv_FetchByID(int ID, schedule_t *buf) {$/;"	f
+Schedule_Srv_FetchByPlay	src/Service/Schedule.c	/^inline int Schedule_Srv_FetchByPlay(schedule_list_t list,int play_id) {$/;"	f
+Schedule_Srv_Modify	src/Service/Schedule.c	/^inline int Schedule_Srv_Modify(const schedule_t *data) {$/;"	f
+Schedule_Srv_StatRevByPlay	src/Service/Schedule.c	/^int Schedule_Srv_StatRevByPlay(int play_id, int *soldCount, int *totalCount) {$/;"	f
+Schedule_UI_Add	src/View/Schedule_UI.c	/^int Schedule_UI_Add(int play_id) {$/;"	f
+Schedule_UI_Delete	src/View/Schedule_UI.c	/^int Schedule_UI_Delete(int id){$/;"	f
+Schedule_UI_ListAll	src/View/Schedule_UI.c	/^void Schedule_UI_ListAll(void) {$/;"	f
+Schedule_UI_ListByPlay	src/View/Schedule_UI.c	/^void Schedule_UI_ListByPlay(const play_t *play, schedule_list_t list, Pagination_t paging){$/;"	f
+Schedule_UI_MgtEntry	src/View/Schedule_UI.c	/^void Schedule_UI_MgtEntry(int play_id){$/;"	f
+Schedule_UI_Modify	src/View/Schedule_UI.c	/^int Schedule_UI_Modify(int id){$/;"	f
+Schedule_UI_Query	src/View/Schedule_UI.c	/^int Schedule_UI_Query(int id){$/;"	f
+Seat_Number_Count	src/Persistence/Query_Persist.c	/^int Seat_Number_Count(int studio_id)$/;"	f
+Seat_Perst_DeleteAllByRoomID	src/Persistence/Seat_Persist.c	/^int Seat_Perst_DeleteAllByRoomID(int roomID) {$/;"	f
+Seat_Perst_DeleteByID	src/Persistence/Seat_Persist.c	/^int Seat_Perst_DeleteByID(int ID) {$/;"	f
+Seat_Perst_Insert	src/Persistence/Seat_Persist.c	/^int Seat_Perst_Insert(const seat_t *data) {$/;"	f
+Seat_Perst_InsertBatch	src/Persistence/Seat_Persist.c	/^int Seat_Perst_InsertBatch(seat_list_t list) {$/;"	f
+Seat_Perst_SelectAll	src/Persistence/Seat_Persist.c	/^int Seat_Perst_SelectAll(seat_list_t list) {$/;"	f
+Seat_Perst_SelectByID	src/Persistence/Seat_Persist.c	/^int Seat_Perst_SelectByID(int ID, seat_t *buf) {$/;"	f
+Seat_Perst_SelectByRoomID	src/Persistence/Seat_Persist.c	/^int Seat_Perst_SelectByRoomID(seat_list_t list, int roomID) {$/;"	f
+Seat_Perst_Update	src/Persistence/Seat_Persist.c	/^int Seat_Perst_Update(const seat_t *seatdata) {$/;"	f
+Seat_Srv_Add	src/Service/Seat.c	/^inline int Seat_Srv_Add(const seat_t *data){$/;"	f
+Seat_Srv_AddBatch	src/Service/Seat.c	/^inline int Seat_Srv_AddBatch(seat_list_t list){$/;"	f
+Seat_Srv_AddToSoftedList	src/Service/Seat.c	/^void Seat_Srv_AddToSoftedList(seat_list_t list, seat_node_t *node) {$/;"	f
+Seat_Srv_DeleteAllByRoomID	src/Service/Seat.c	/^inline int Seat_Srv_DeleteAllByRoomID(int roomID){$/;"	f
+Seat_Srv_DeleteByID	src/Service/Seat.c	/^inline int Seat_Srv_DeleteByID(int ID){$/;"	f
+Seat_Srv_FetchByID	src/Service/Seat.c	/^inline int Seat_Srv_FetchByID(int ID, seat_t *buf){$/;"	f
+Seat_Srv_FetchByRoomID	src/Service/Seat.c	/^int Seat_Srv_FetchByRoomID(seat_list_t list, int roomID){$/;"	f
+Seat_Srv_FetchValidByRoomID	src/Service/Seat.c	/^int Seat_Srv_FetchValidByRoomID(seat_list_t list, int roomID)$/;"	f
+Seat_Srv_FindByID	src/Service/Seat.c	/^inline seat_node_t * Seat_Srv_FindByID(seat_list_t list, int rowID) {$/;"	f
+Seat_Srv_FindByRowCol	src/Service/Seat.c	/^inline seat_node_t * Seat_Srv_FindByRowCol(seat_list_t list, int row, int column) {$/;"	f
+Seat_Srv_Modify	src/Service/Seat.c	/^inline int Seat_Srv_Modify(const seat_t *data){$/;"	f
+Seat_Srv_RoomInit	src/Service/Seat.c	/^int Seat_Srv_RoomInit(seat_list_t list, int roomID, int rowsCount,int colsCount) {$/;"	f
+Seat_Srv_SortSeatList	src/Service/Seat.c	/^void Seat_Srv_SortSeatList(seat_list_t list) {$/;"	f
+Seat_UI_Add	src/View/Seat_UI.c	/^int Seat_UI_Add(seat_list_t list, int roomID, int row, int column) {$/;"	f
+Seat_UI_Char2Status	src/View/Seat_UI.c	/^seat_status_t Seat_UI_Char2Status(char statusChar) {$/;"	f
+Seat_UI_Delete	src/View/Seat_UI.c	/^int Seat_UI_Delete(seat_list_t list, int row, int column) {$/;"	f
+Seat_UI_MgtEntry	src/View/Seat_UI.c	/^int  Seat_UI_MgtEntry(int roomID) {$/;"	f
+Seat_UI_Modify	src/View/Seat_UI.c	/^int Seat_UI_Modify(seat_list_t list, int row, int column) {$/;"	f
+Seat_UI_Status2Char	src/View/Seat_UI.c	/^char Seat_UI_Status2Char(seat_status_t status) {$/;"	f
+Sold_Ticket_Count	src/Persistence/Query_Persist.c	/^int Sold_Ticket_Count(int id)$/;"	f
+Str2Lower	src/Common/Common.c	/^char *Str2Lower(char *str) {$/;"	f
+Str2Upper	src/Common/Common.c	/^char *Str2Upper(char *str) {$/;"	f
+Studio_Perst_DeleteByID	src/Persistence/Studio_Persist.c	/^int Studio_Perst_DeleteByID(int ID) {$/;"	f
+Studio_Perst_Insert	src/Persistence/Studio_Persist.c	/^int Studio_Perst_Insert(const studio_t *data) {$/;"	f
+Studio_Perst_SelectAll	src/Persistence/Studio_Persist.c	/^int Studio_Perst_SelectAll(studio_list_t list) {$/;"	f
+Studio_Perst_SelectByID	src/Persistence/Studio_Persist.c	/^int Studio_Perst_SelectByID(int ID, studio_t *buf) {$/;"	f
+Studio_Perst_Update	src/Persistence/Studio_Persist.c	/^int Studio_Perst_Update(const studio_t * data) {$/;"	f
+Studio_Srv_Add	src/Service/Studio.c	/^inline int Studio_Srv_Add(const studio_t *data) {$/;"	f
+Studio_Srv_DeleteByID	src/Service/Studio.c	/^inline int Studio_Srv_DeleteByID(int ID) {$/;"	f
+Studio_Srv_FetchAll	src/Service/Studio.c	/^inline int Studio_Srv_FetchAll(studio_list_t list) {$/;"	f
+Studio_Srv_FetchByID	src/Service/Studio.c	/^inline int Studio_Srv_FetchByID(int ID, studio_t *buf) {$/;"	f
+Studio_Srv_FindByID	src/Service/Studio.c	/^inline studio_node_t *Studio_Srv_FindByID(studio_list_t list, int ID){$/;"	f
+Studio_Srv_Modify	src/Service/Studio.c	/^inline int Studio_Srv_Modify(const studio_t *data) {$/;"	f
+Studio_UI_Add	src/View/Studio_UI.c	/^int Studio_UI_Add(void) {$/;"	f
+Studio_UI_Delete	src/View/Studio_UI.c	/^int Studio_UI_Delete(int id) {$/;"	f
+Studio_UI_MgtEntry	src/View/Studio_UI.c	/^void Studio_UI_MgtEntry(void) {$/;"	f
+Studio_UI_Modify	src/View/Studio_UI.c	/^int Studio_UI_Modify(int id) {$/;"	f
+SysLogin	src/View/Account_UI.c	/^int SysLogin() {$/;"	f
+SysLogout	src/View/Account_UI.c	/^int SysLogout() {$/;"	f
+TICKETPERSIST_H_	src/Persistence/Ticket_Persist.h	2;"	d
+TICKET_AVL	src/Service/Ticket.h	/^	TICKET_AVL=0,		\/\/待售$/;"	e	enum:__anon14
+TICKET_DATA_FILE	src/Persistence/Query_Persist.c	/^static const char TICKET_DATA_FILE[]="Ticket.dat";$/;"	v	file:
+TICKET_DATA_FILE	src/Persistence/Ticket_Persist.c	/^static const char TICKET_DATA_FILE[]="Ticket.dat";$/;"	v	file:
+TICKET_DATA_TEMP_FILE	src/Persistence/Ticket_Persist.c	/^static const char TICKET_DATA_TEMP_FILE[]="TicketTemp.dat";$/;"	v	file:
+TICKET_H_	src/Service/Ticket.h	2;"	d
+TICKET_PAGE_SIZE	src/View/Ticket_UI.h	/^static const int TICKET_PAGE_SIZE=8;$/;"	v
+TICKET_PAGE_SZIE	src/View/Ticket_UI.c	/^static const int TICKET_PAGE_SZIE = 6;$/;"	v	file:
+TICKET_RESV	src/Service/Ticket.h	/^	TICKET_RESV=9		\/\/预留$/;"	e	enum:__anon14
+TICKET_SOLD	src/Service/Ticket.h	/^	TICKET_SOLD=1,		\/\/已售$/;"	e	enum:__anon14
+TICKET_SOLD_SeleBySchedule	src/Persistence/Ticket_Persist.c	/^int TICKET_SOLD_SeleBySchedule(int schedule_id)$/;"	f
+TICKET_UI_H_	src/View/Ticket_UI.h	2;"	d
+Ticket_Perst_Delete	src/Persistence/Ticket_Persist.c	/^int Ticket_Perst_Delete(int schedule_id){$/;"	f
+Ticket_Perst_Insert	src/Persistence/Ticket_Persist.c	/^int Ticket_Perst_Insert(ticket_list_t list){$/;"	f
+Ticket_Perst_SelectAll	src/Persistence/Ticket_Persist.c	/^int Ticket_Perst_SelectAll(ticket_list_t list) {$/;"	f
+Ticket_Perst_SelectByID	src/Persistence/Ticket_Persist.c	/^int Ticket_Perst_SelectByID(int ID, ticket_t *buf) {$/;"	f
+Ticket_Perst_SelectBySchID	src/Persistence/Ticket_Persist.c	/^int Ticket_Perst_SelectBySchID(ticket_list_t list, int schedule_id) {$/;"	f
+Ticket_Perst_Update	src/Persistence/Ticket_Persist.c	/^int Ticket_Perst_Update(const ticket_t * data) {$/;"	f
+Ticket_Srv_AddBatch	src/Service/Ticket.c	/^int Ticket_Srv_AddBatch(int schedule_id, int studio_id){$/;"	f
+Ticket_Srv_DeleteBatch	src/Service/Ticket.c	/^int Ticket_Srv_DeleteBatch(int schedule_id) {$/;"	f
+Ticket_Srv_FetchByID	src/Service/Ticket.c	/^int Ticket_Srv_FetchByID(int ID, ticket_t *buf) {$/;"	f
+Ticket_Srv_FetchBySchID	src/Service/Ticket.c	/^int Ticket_Srv_FetchBySchID(ticket_list_t list, int schedule_id) {$/;"	f
+Ticket_Srv_FindBySeatID	src/Service/Ticket.c	/^inline ticket_node_t * Ticket_Srv_FindBySeatID(ticket_list_t list, int seat_id){$/;"	f
+Ticket_Srv_Modify	src/Service/Ticket.c	/^int Ticket_Srv_Modify(const ticket_t * data){$/;"	f
+Ticket_Srv_StatRevBySchID	src/Service/Ticket.c	/^int Ticket_Srv_StatRevBySchID(int schedule_id, int *soldCount, int *totalCount){$/;"	f
+Ticket_UI_ListBySch	src/View/Ticket_UI.c	/^void Ticket_UI_ListBySch(const schedule_t *sch,	ticket_list_t tickList, seat_list_t seatList) {$/;"	f
+Ticket_UI_Print	src/View/Ticket_UI.c	/^void Ticket_UI_Print(int ID){$/;"	f
+Ticket_UI_Status2Char	src/View/Ticket_UI.c	/^inline char Ticket_UI_Status2Char(ticket_status_t status) {$/;"	f
+TimeNow	src/Common/Common.c	/^user_time_t TimeNow(){$/;"	f
+USR_ADMIN	src/Service/Account.h	/^	USR_ADMIN = 9$/;"	e	enum:__anon6
+USR_ANOMY	src/Service/Account.h	/^	USR_ANOMY = 0,$/;"	e	enum:__anon6
+USR_CLERK	src/Service/Account.h	/^	USR_CLERK =1,$/;"	e	enum:__anon6
+USR_MANG	src/Service/Account.h	/^	USR_MANG = 2,$/;"	e	enum:__anon6
+UpdateTicket	src/View/Ticket_UI.c	/^int UpdateTicket(int id){$/;"	f
+account_list_t	src/Service/Account.h	/^} account_node_t, *account_list_t;$/;"	t	typeref:struct:account_node
+account_node	src/Service/Account.h	/^typedef struct account_node {$/;"	s
+account_node_t	src/Service/Account.h	/^} account_node_t, *account_list_t;$/;"	t	typeref:struct:account_node
+account_t	src/Service/Account.h	/^} account_t;$/;"	t	typeref:struct:__anon7
+account_type_t	src/Service/Account.h	/^} account_type_t;$/;"	t	typeref:enum:__anon6
+area	src/Service/Play.h	/^	char area[9];$/;"	m	struct:__anon18
+area	src/Service/SalesAnalysis.h	/^	char area[9]; 	\/\/剧目区域$/;"	m	struct:__anon12
+cl_stdin	src/Common/ComFunction.c	/^void cl_stdin(){$/;"	f
+colsCount	src/Service/Studio.h	/^	int colsCount;	\/\/座位列数$/;"	m	struct:__anon5
+column	src/Service/Seat.h	/^    int column;        		\/\/座位列号$/;"	m	struct:__anon9
+comFunction_H_	src/Common/ComFunction.h	2;"	d
+curPos	src/Common/List.h	/^	void *curPos;		\/\/当前页起始记录在链表中的结点地址$/;"	m	struct:__anon3
+data	src/Service/Account.h	/^	account_t data;$/;"	m	struct:account_node
+data	src/Service/EntityKey.h	/^	entity_key_t data;$/;"	m	struct:entity_key_node
+data	src/Service/Play.h	/^	play_t data;$/;"	m	struct:play_node
+data	src/Service/Sale.h	/^	sale_t data;$/;"	m	struct:sale_node
+data	src/Service/SalesAnalysis.h	/^	salesanalysis_t data;$/;"	m	struct:salesanalysis_node
+data	src/Service/Schedule.h	/^	schedule_t data;$/;"	m	struct:schedule_node
+data	src/Service/Seat.h	/^	seat_t data;$/;"	m	struct:seat_node
+data	src/Service/Studio.h	/^	studio_t data;				\/\/实体数据$/;"	m	struct:studio_node
+data	src/Service/Ticket.h	/^	ticket_t data;$/;"	m	struct:ticket_node
+date	src/Service/Sale.h	/^	user_date_t date ;	\/\/处理日期$/;"	m	struct:__anon11
+date	src/Service/Schedule.h	/^	user_date_t date;$/;"	m	struct:__anon4
+day	src/Common/Common.h	/^	int day;$/;"	m	struct:__anon1
+duration	src/Service/Play.h	/^	int duration; \/\/以分钟为单位$/;"	m	struct:__anon18
+duration	src/Service/SalesAnalysis.h	/^	int duration; 	\/\/以分钟为单位$/;"	m	struct:__anon12
+end_date	src/Service/Play.h	/^	user_date_t end_date;$/;"	m	struct:__anon18
+end_date	src/Service/SalesAnalysis.h	/^	user_date_t end_date; 	\/\/剧目下映日期$/;"	m	struct:__anon12
+entity_key_node	src/Service/EntityKey.h	/^typedef struct entity_key_node{$/;"	s
+entity_key_t	src/Service/EntityKey.h	/^} entity_key_t;$/;"	t	typeref:struct:__anon13
+entkey_list_t	src/Service/EntityKey.h	/^}entkey_node_t, *entkey_list_t;$/;"	t	typeref:struct:entity_key_node
+entkey_node_t	src/Service/EntityKey.h	/^}entkey_node_t, *entkey_list_t;$/;"	t	typeref:struct:entity_key_node
+entyName	src/Service/EntityKey.h	/^	char entyName[41];$/;"	m	struct:__anon13
+getch	src/Common/ComFunction.c	/^int getch(void)$/;"	f
+getpwd	src/Common/ComFunction.c	/^void getpwd(int maxlen,char *pwd){$/;"	f
+gl_CurUser	src/TTMS.c	/^account_t gl_CurUser={0, USR_ANOMY, "Anonymous",""};$/;"	v
+hour	src/Common/Common.h	/^	int hour;$/;"	m	struct:__anon2
+id	src/Service/Account.h	/^	int  id;\/\/用户id$/;"	m	struct:__anon7
+id	src/Service/Play.h	/^	int id;$/;"	m	struct:__anon18
+id	src/Service/Sale.h	/^	long id;      		\/\/销售记录ID$/;"	m	struct:__anon11
+id	src/Service/Schedule.h	/^	int id;$/;"	m	struct:__anon4
+id	src/Service/Seat.h	/^	int id;					\/\/座位id$/;"	m	struct:__anon9
+id	src/Service/Studio.h	/^	int id;			\/\/放映厅ID$/;"	m	struct:__anon5
+id	src/Service/Ticket.h	/^	int id;$/;"	m	struct:__anon15
+key	src/Service/EntityKey.h	/^	long key;$/;"	m	struct:__anon13
+l_getc	src/Common/ComFunction.c	/^char l_getc(){$/;"	f
+main	src/TTMS.c	/^int main(void) {$/;"	f
+minute	src/Common/Common.h	/^	int minute;$/;"	m	struct:__anon2
+month	src/Common/Common.h	/^	int month;$/;"	m	struct:__anon1
+name	src/Service/Play.h	/^	char name[31];$/;"	m	struct:__anon18
+name	src/Service/SalesAnalysis.h	/^	char name[31]; 	\/\/剧目名称$/;"	m	struct:__anon12
+name	src/Service/Studio.h	/^	char name[30];	\/\/放映厅名称$/;"	m	struct:__anon5
+next	src/Service/Account.h	/^	struct account_node *next, *prev;$/;"	m	struct:account_node	typeref:struct:account_node::account_node
+next	src/Service/EntityKey.h	/^	struct entity_key_node *next;$/;"	m	struct:entity_key_node	typeref:struct:entity_key_node::entity_key_node
+next	src/Service/Play.h	/^	struct play_node *next, *prev;$/;"	m	struct:play_node	typeref:struct:play_node::play_node
+next	src/Service/Sale.h	/^	struct sale_node *next, *prev;$/;"	m	struct:sale_node	typeref:struct:sale_node::sale_node
+next	src/Service/SalesAnalysis.h	/^	struct salesanalysis_node *next, *prev;$/;"	m	struct:salesanalysis_node	typeref:struct:salesanalysis_node::salesanalysis_node
+next	src/Service/Schedule.h	/^	struct schedule_node *next, *prev;$/;"	m	struct:schedule_node	typeref:struct:schedule_node::schedule_node
+next	src/Service/Seat.h	/^	struct seat_node *next, *prev;$/;"	m	struct:seat_node	typeref:struct:seat_node::seat_node
+next	src/Service/Studio.h	/^	struct studio_node *next;	\/\/后向指针$/;"	m	struct:studio_node	typeref:struct:studio_node::studio_node
+next	src/Service/Ticket.h	/^	struct ticket_node *next, *prev;$/;"	m	struct:ticket_node	typeref:struct:ticket_node::ticket_node
+offset	src/Common/List.h	/^	int offset;			\/\/当前页起始记录相对于第一条记录的偏移记录数$/;"	m	struct:__anon3
+pageSize	src/Common/List.h	/^	int pageSize;		\/\/页面大小$/;"	m	struct:__anon3
+password	src/Service/Account.h	/^	char password[30];\/\/用户密码$/;"	m	struct:__anon7
+play_id	src/Service/SalesAnalysis.h	/^	int play_id; 	\/\/剧目编号$/;"	m	struct:__anon12
+play_id	src/Service/Schedule.h	/^	int play_id;$/;"	m	struct:__anon4
+play_list_t	src/Service/Play.h	/^} play_node_t, *play_list_t;$/;"	t	typeref:struct:play_node
+play_node	src/Service/Play.h	/^typedef struct play_node {$/;"	s
+play_node_t	src/Service/Play.h	/^} play_node_t, *play_list_t;$/;"	t	typeref:struct:play_node
+play_rating_t	src/Service/Play.h	/^} play_rating_t;$/;"	t	typeref:enum:__anon17
+play_t	src/Service/Play.h	/^} play_t;$/;"	t	typeref:struct:__anon18
+play_type_t	src/Service/Play.h	/^} play_type_t;$/;"	t	typeref:enum:__anon16
+prev	src/Service/Account.h	/^	struct account_node *next, *prev;$/;"	m	struct:account_node	typeref:struct:account_node::
+prev	src/Service/EntityKey.h	/^	struct entity_key_node *prev;$/;"	m	struct:entity_key_node	typeref:struct:entity_key_node::entity_key_node
+prev	src/Service/Play.h	/^	struct play_node *next, *prev;$/;"	m	struct:play_node	typeref:struct:play_node::
+prev	src/Service/Sale.h	/^	struct sale_node *next, *prev;$/;"	m	struct:sale_node	typeref:struct:sale_node::
+prev	src/Service/SalesAnalysis.h	/^	struct salesanalysis_node *next, *prev;$/;"	m	struct:salesanalysis_node	typeref:struct:salesanalysis_node::
+prev	src/Service/Schedule.h	/^	struct schedule_node *next, *prev;$/;"	m	struct:schedule_node	typeref:struct:schedule_node::
+prev	src/Service/Seat.h	/^	struct seat_node *next, *prev;$/;"	m	struct:seat_node	typeref:struct:seat_node::
+prev	src/Service/Studio.h	/^	struct studio_node *prev;	\/\/前向指针$/;"	m	struct:studio_node	typeref:struct:studio_node::studio_node
+prev	src/Service/Ticket.h	/^	struct ticket_node *next, *prev;$/;"	m	struct:ticket_node	typeref:struct:ticket_node::
+price	src/Service/Play.h	/^	int price;$/;"	m	struct:__anon18
+price	src/Service/SalesAnalysis.h	/^	int price; 		\/\/剧目票价$/;"	m	struct:__anon12
+price	src/Service/Ticket.h	/^	int price;$/;"	m	struct:__anon15
+prom	src/Common/ComFunction.c	/^int prom(char *msg,char a,char b){$/;"	f
+rating	src/Service/Play.h	/^	play_rating_t rating;$/;"	m	struct:__anon18
+roomID	src/Service/Seat.h	/^	int roomID;				\/\/所在演出厅id$/;"	m	struct:__anon9
+row	src/Service/Seat.h	/^	int row;           		\/\/座位行号$/;"	m	struct:__anon9
+rowsCount	src/Service/Studio.h	/^	int rowsCount;	\/\/座位行数$/;"	m	struct:__anon5
+sale_list_t	src/Service/Sale.h	/^} sale_node_t, *sale_list_t;$/;"	t	typeref:struct:sale_node
+sale_node	src/Service/Sale.h	/^typedef struct sale_node {$/;"	s
+sale_node_t	src/Service/Sale.h	/^} sale_node_t, *sale_list_t;$/;"	t	typeref:struct:sale_node
+sale_t	src/Service/Sale.h	/^}sale_t;$/;"	t	typeref:struct:__anon11
+sale_type_t	src/Service/Sale.h	/^}sale_type_t;$/;"	t	typeref:enum:__anon10
+sales	src/Service/SalesAnalysis.h	/^	long sales; 	\/\/剧目票销售数量$/;"	m	struct:__anon12
+salesanalysis_list_t	src/Service/SalesAnalysis.h	/^} salesanalysis_node_t, *salesanalysis_list_t;$/;"	t	typeref:struct:salesanalysis_node
+salesanalysis_node	src/Service/SalesAnalysis.h	/^typedef struct salesanalysis_node {$/;"	s
+salesanalysis_node_t	src/Service/SalesAnalysis.h	/^} salesanalysis_node_t, *salesanalysis_list_t;$/;"	t	typeref:struct:salesanalysis_node
+salesanalysis_t	src/Service/SalesAnalysis.h	/^} salesanalysis_t;$/;"	t	typeref:struct:__anon12
+schedule_id	src/Service/Ticket.h	/^	int schedule_id;$/;"	m	struct:__anon15
+schedule_list_t	src/Service/Schedule.h	/^} schedule_node_t, *schedule_list_t;$/;"	t	typeref:struct:schedule_node
+schedule_node	src/Service/Schedule.h	/^typedef struct schedule_node {$/;"	s
+schedule_node_t	src/Service/Schedule.h	/^} schedule_node_t, *schedule_list_t;$/;"	t	typeref:struct:schedule_node
+schedule_t	src/Service/Schedule.h	/^}schedule_t;$/;"	t	typeref:struct:__anon4
+seat_count	src/Service/Schedule.h	/^	int seat_count;$/;"	m	struct:__anon4
+seat_id	src/Service/Ticket.h	/^	int seat_id;$/;"	m	struct:__anon15
+seat_list_t	src/Service/Seat.h	/^} seat_node_t, *seat_list_t;$/;"	t	typeref:struct:seat_node
+seat_node	src/Service/Seat.h	/^typedef struct seat_node {$/;"	s
+seat_node_t	src/Service/Seat.h	/^} seat_node_t, *seat_list_t;$/;"	t	typeref:struct:seat_node
+seat_status_t	src/Service/Seat.h	/^}seat_status_t;$/;"	t	typeref:enum:__anon8
+seat_t	src/Service/Seat.h	/^} seat_t;$/;"	t	typeref:struct:__anon9
+seatsCount	src/Service/Studio.h	/^	int seatsCount;$/;"	m	struct:__anon5
+second	src/Common/Common.h	/^	int second;$/;"	m	struct:__anon2
+start_date	src/Service/Play.h	/^	user_date_t start_date;$/;"	m	struct:__anon18
+start_date	src/Service/SalesAnalysis.h	/^	user_date_t start_date; 	\/\/剧目上映日期$/;"	m	struct:__anon12
+status	src/Service/Seat.h	/^    seat_status_t status;	\/\/座位在该行的状态，0表示没有座位，1表示有座位。扩展2可表示座位坏了$/;"	m	struct:__anon9
+status	src/Service/Ticket.h	/^	ticket_status_t status;$/;"	m	struct:__anon15
+studio_id	src/Service/Schedule.h	/^	int studio_id;$/;"	m	struct:__anon4
+studio_list_t	src/Service/Studio.h	/^} studio_node_t, *studio_list_t;$/;"	t	typeref:struct:studio_node
+studio_node	src/Service/Studio.h	/^typedef struct studio_node {$/;"	s
+studio_node_t	src/Service/Studio.h	/^} studio_node_t, *studio_list_t;$/;"	t	typeref:struct:studio_node
+studio_t	src/Service/Studio.h	/^} studio_t;$/;"	t	typeref:struct:__anon5
+ticket_id	src/Service/Sale.h	/^	int ticket_id;		\/\/票ID$/;"	m	struct:__anon11
+ticket_list_t	src/Service/Ticket.h	/^} ticket_node_t, *ticket_list_t;$/;"	t	typeref:struct:ticket_node
+ticket_node	src/Service/Ticket.h	/^typedef struct ticket_node {$/;"	s
+ticket_node_t	src/Service/Ticket.h	/^} ticket_node_t, *ticket_list_t;$/;"	t	typeref:struct:ticket_node
+ticket_status_t	src/Service/Ticket.h	/^}ticket_status_t;$/;"	t	typeref:enum:__anon14
+ticket_t	src/Service/Ticket.h	/^} ticket_t;$/;"	t	typeref:struct:__anon15
+time	src/Service/Sale.h	/^	user_time_t time;	\/\/处理时间$/;"	m	struct:__anon11
+time	src/Service/Schedule.h	/^	user_time_t time;$/;"	m	struct:__anon4
+totalRecords	src/Common/List.h	/^	int totalRecords;	\/\/总记录数$/;"	m	struct:__anon3
+totaltickets	src/Service/SalesAnalysis.h	/^	long totaltickets; \/\/电影票房$/;"	m	struct:__anon12
+type	src/Service/Account.h	/^	account_type_t type;\/\/用户类型$/;"	m	struct:__anon7
+type	src/Service/Play.h	/^	play_type_t type;$/;"	m	struct:__anon18
+type	src/Service/Sale.h	/^	sale_type_t type; \/\/交易类型$/;"	m	struct:__anon11
+user_date_t	src/Common/Common.h	/^}user_date_t;$/;"	t	typeref:struct:__anon1
+user_id	src/Service/Sale.h	/^	int user_id;		\/\/售票员ID$/;"	m	struct:__anon11
+user_time_t	src/Common/Common.h	/^}user_time_t;$/;"	t	typeref:struct:__anon2
+username	src/Service/Account.h	/^	char username[30];\/\/用户名$/;"	m	struct:__anon7
+value	src/Service/Sale.h	/^	int value;			\/\/票价$/;"	m	struct:__anon11
+year	src/Common/Common.h	/^	int year;$/;"	m	struct:__anon1
