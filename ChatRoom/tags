@@ -1,0 +1,147 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BACKLOG	server/server5.c	23;"	d	file:
+CC	client/Makefile	/^CC = gcc$/;"	m
+CC	server/Makefile	/^CC = gcc$/;"	m
+MAXLEN	client/client2.c	22;"	d	file:
+MAXLEN	server/server5.c	24;"	d	file:
+PORT	client/client2.c	21;"	d	file:
+PORT	server/server5.c	22;"	d	file:
+add_friend	client/client2.c	/^void add_friend(GtkWidget *widget, gpointer data)$/;"	f
+agree_request	client/client2.c	/^void agree_request(GtkWidget *widget, gpointer data)$/;"	f
+button_cancel	client/client2.c	/^        GtkWidget *button_cancel; $/;"	m	struct:login_widget	file:
+button_enroll	client/client2.c	/^        GtkWidget *button_enroll; $/;"	m	struct:login_widget	file:
+button_login	client/client2.c	/^        GtkWidget *button_login;    \/\/两个按钮，一个点击后登录，一个点击后退出$/;"	m	struct:login_widget	file:
+change_pwd	server/server5.c	/^void change_pwd(char *name, char *passwd)$/;"	f
+chat_group	client/client2.c	/^void chat_group(GtkWidget *widget, gpointer data)$/;"	f
+chat_single	client/client2.c	/^void chat_single(GtkWidget *widget, gpointer data)$/;"	f
+chatroom_help	client/client2.c	/^void chatroom_help(GtkWidget *widget, gpointer data)$/;"	f
+chatroom_set	client/client2.c	/^void chatroom_set(GtkWidget *widget, gpointer data)$/;"	f
+clear_group	client/client2.c	/^void clear_group(GtkWidget *widget, gpointer data)$/;"	f
+clear_single	client/client2.c	/^void clear_single(GtkWidget *widget, gpointer data)$/;"	f
+create_button1	client/client2.c	/^GtkWidget *create_button1(void)$/;"	f
+create_button2	client/client2.c	/^GtkWidget *create_button2(void)$/;"	f
+create_button3	client/client2.c	/^GtkWidget *create_button3(void)$/;"	f
+create_button4	client/client2.c	/^GtkWidget *create_button4(void)$/;"	f
+create_pixbuf	client/client2.c	/^GdkPixbuf *create_pixbuf(const gchar* filename)  $/;"	f
+delete	client/client2.c	/^char delete[MAXLEN];        \/\/存放要删除的文件名$/;"	v
+delete_friend	client/client2.c	/^void delete_friend(GtkWidget *widget, gpointer data)$/;"	f
+disagree_request	client/client2.c	/^void disagree_request(GtkWidget *widget, gpointer data)$/;"	f
+download	client/client2.c	/^void download(GtkWidget *widget, gpointer data)$/;"	f
+enroll	client/client2.c	/^void enroll(GtkWidget *widget,gpointer data)$/;"	f
+enroll	server/server5.c	/^void enroll(char *name)$/;"	f
+entry	client/client2.c	/^        GtkWidget *entry;$/;"	m	struct:login_widget	file:
+entry1	client/client2.c	/^        GtkWidget *entry1;$/;"	m	struct:login_widget	file:
+entry2	client/client2.c	/^        GtkWidget *entry2;$/;"	m	struct:login_widget	file:
+entry_pwd	client/client2.c	/^        GtkWidget *entry_pwd;$/;"	m	struct:login_widget	file:
+entry_pwd2	client/client2.c	/^        GtkWidget *entry_pwd2;$/;"	m	struct:login_widget	file:
+entry_username	client/client2.c	/^        GtkWidget *entry_username;  \/\/两个文本框，用于输入用户名和密码$/;"	m	struct:login_widget	file:
+file	client/client2.c	/^    char file[100];$/;"	m	struct:message	file:
+file	server/server5.c	/^    char file[100];         \/\/文件内容$/;"	m	struct:message	file:
+file_ok_sel	client/client2.c	/^void file_ok_sel( GtkWidget *w, GtkFileSelection *fs )$/;"	f
+filename	client/client2.c	/^    char filename[256];$/;"	m	struct:message	file:
+filename	client/client2.c	/^char filename[MAXLEN];      \/\/存放要下载的文件名$/;"	v
+filename	server/server5.c	/^    char filename[256];     \/\/文件名$/;"	m	struct:message	file:
+flag	client/client2.c	/^    int flag;$/;"	m	struct:message	file:
+flag	client/client2.c	/^char flag[10]; 		        \/\/判断用户密码是否正确$/;"	v
+flag	server/server5.c	/^    int flag;               \/\/标志$/;"	m	struct:message	file:
+flag	server/server5.c	/^char flag[10]; 		    \/\/判断用户信息是否正确$/;"	v
+flag_change	server/server5.c	/^char flag_change[10];   \/\/判断修改密码是否成功$/;"	v
+flag_enroll	server/server5.c	/^char flag_enroll[10];   \/\/判断该用户是否已经注册$/;"	v
+fresh_friend	client/client2.c	/^void fresh_friend(GtkWidget *widget, gpointer data)$/;"	f
+friend	client/client2.c	/^    char friend[16];$/;"	m	struct:message	file:
+friend	server/server5.c	/^    char friend[16];        \/\/聊天好友$/;"	m	struct:message	file:
+ftp	client/client2.c	/^void ftp(GtkWidget *widget, gpointer data)$/;"	f
+ftp_download	client/client2.c	/^void ftp_download(GtkWidget *widget,gpointer data)$/;"	f
+ftp_upload	client/client2.c	/^void ftp_upload(GtkWidget *widget, gpointer data)$/;"	f
+game	client/client2.c	/^void game(GtkWidget *widget, gpointer data)$/;"	f
+group_history	client/client2.c	/^void group_history(GtkWidget *widget, gpointer data)$/;"	f
+gtk_dialog_destroy	client/client2.c	/^void gtk_dialog_destroy(GtkWidget *widget, gpointer data)$/;"	f
+gtk_friend_destroy	client/client2.c	/^void gtk_friend_destroy(GtkWidget *widget, gpointer data)$/;"	f
+gtk_win_chat	client/client2.c	/^void gtk_win_chat(GtkWidget *widget, gpointer data)$/;"	f
+handler_sigint	server/server5.c	/^void handler_sigint(int signo)$/;"	f
+hbox_button	client/client2.c	/^        GtkWidget *hbox_button;$/;"	m	struct:login_widget	file:
+hbox_pwd	client/client2.c	/^        GtkWidget *hbox_pwd;$/;"	m	struct:login_widget	file:
+hbox_pwd2	client/client2.c	/^        GtkWidget *hbox_pwd2;$/;"	m	struct:login_widget	file:
+hbox_username	client/client2.c	/^        GtkWidget *hbox_username;   \/\/包含用户名提示标签和用户名文本框，下面的HBOX作用类似$/;"	m	struct:login_widget	file:
+ignore_request_request	client/client2.c	/^void ignore_request_request(GtkWidget *widget, gpointer data)$/;"	f
+inf	server/server5.c	/^}inf,info[MAXLEN];$/;"	v	typeref:struct:message
+info	client/client2.c	/^}info;$/;"	v	typeref:struct:usr
+info	server/server5.c	/^}inf,info[MAXLEN];$/;"	v	typeref:struct:message
+init_login_widget	client/client2.c	/^void init_login_widget()$/;"	f
+k	server/server5.c	/^int k = 0;              \/\/记录在线用户个数$/;"	v
+label_pwd	client/client2.c	/^        GtkWidget *label_pwd;$/;"	m	struct:login_widget	file:
+label_pwd2	client/client2.c	/^        GtkWidget *label_pwd2;$/;"	m	struct:login_widget	file:
+label_tips	client/client2.c	/^        GtkWidget *label_tips;      \/\/用于信息提示的标签$/;"	m	struct:login_widget	file:
+label_username	client/client2.c	/^        GtkWidget *label_username;  \/\/两个标签用于显示username文本框和password文本框提示$/;"	m	struct:login_widget	file:
+login_widget	client/client2.c	/^struct login_widget{$/;"	s	file:
+main	client/client2.c	/^int main(int argc,char *argv[])$/;"	f
+main	server/server5.c	/^int main(int argc, char *argv[])$/;"	f
+make_dialog	client/client2.c	/^void make_dialog(GtkWidget *widget, gpointer window)$/;"	f
+manage_friends	client/client2.c	/^void manage_friends(GtkWidget *widget, gpointer data)$/;"	f
+manager_entrance	client/client2.c	/^void manager_entrance(GtkWidget *widget, gpointer data)$/;"	f
+match	server/server5.c	/^void match(char *name, char *passwd)$/;"	f
+message	client/client2.c	/^struct message {$/;"	s	file:
+message	server/server5.c	/^struct message {  $/;"	s	file:
+modify_passwd	client/client2.c	/^void modify_passwd(GtkWidget *widget, gpointer data)$/;"	f
+modify_pwd	client/client2.c	/^void modify_pwd(GtkWidget *widget, gpointer data)$/;"	f
+msg	client/client2.c	/^    char msg[MAXLEN];$/;"	m	struct:message	file:
+msg	server/server5.c	/^    char msg[MAXLEN];       \/\/消息$/;"	m	struct:message	file:
+my_err	client/client2.c	/^void my_err(const char *err_string, int line)$/;"	f
+my_err	server/server5.c	/^void my_err(const char *err_string, int line)$/;"	f
+nowtime	client/client2.c	/^time_t nowtime;$/;"	v
+nowtime	server/server5.c	/^time_t nowtime;    $/;"	v
+password	client/client2.c	/^	char password[17];$/;"	m	struct:message	file:
+password	client/client2.c	/^	char password[17];$/;"	m	struct:usr	file:
+password	server/server5.c	/^    char password[17];      \/\/密码$/;"	m	struct:message	file:
+pathname	client/client2.c	/^char pathname[MAXLEN];      \/\/保存全路径名$/;"	v
+process	client/client2.c	/^void process(void)$/;"	f
+process	server/server5.c	/^void *process(void *ss)$/;"	f
+quit	client/client2.c	/^void quit(GtkWidget *widget, gpointer data)$/;"	f
+recv_filelist	client/client2.c	/^void *recv_filelist(void *arg)$/;"	f
+recv_message_group	client/client2.c	/^void *recv_message_group(void *arg)$/;"	f
+recv_message_single	client/client2.c	/^void *recv_message_single(void *arg)$/;"	f
+request	client/client2.c	/^    char request[50];$/;"	m	struct:message	file:
+request	server/server5.c	/^    char request[50];       \/\/好友请求$/;"	m	struct:message	file:
+result_download	client/client2.c	/^void result_download()$/;"	f
+result_upload	client/client2.c	/^void result_upload()$/;"	f
+s	client/client2.c	/^int s;$/;"	v
+saolei	client/client2.c	/^void saolei(GtkWidget *widget, gpointer data)$/;"	f
+select_color	client/client2.c	/^void select_color(GtkWidget *widget, gpointer label)$/;"	f
+select_font	client/client2.c	/^void select_font(GtkWidget *widget, gpointer label)$/;"	f
+send_file	client/client2.c	/^void send_file(GtkWidget *widget, gpointer data)$/;"	f
+send_message	client/client2.c	/^void send_message(GtkWidget *widget, gpointer data)$/;"	f
+send_user	client/client2.c	/^void send_user(GtkWidget *widget, gpointer data)$/;"	f
+set_color	client/client2.c	/^void set_color(GtkWidget *widget, gpointer data)$/;"	f
+set_font	client/client2.c	/^void set_font(GtkWidget *widget, gpointer data)$/;"	f
+single_history	client/client2.c	/^void single_history(GtkWidget *widget, gpointer data)$/;"	f
+sock_fd	client/client2.c	/^    int sock_fd;$/;"	m	struct:message	file:
+sock_fd	server/server5.c	/^    int sock_fd;            \/\/在线用户套接字        $/;"	m	struct:message	file:
+sock_fd	server/server5.c	/^    int sock_fd;        \/\/在线用户套接字        $/;"	m	struct:userinfo	file:
+state	client/client2.c	/^    char state[5];$/;"	m	struct:message	file:
+state	server/server5.c	/^    char state[5];          \/\/离线提示$/;"	m	struct:message	file:
+statu	client/client2.c	/^    int statu;$/;"	m	struct:message	file:
+statu	server/server5.c	/^    int statu;              \/\/用户状态$/;"	m	struct:message	file:
+text1	client/client2.c	/^        GtkWidget *text1;$/;"	m	struct:login_widget	file:
+text2	client/client2.c	/^        GtkWidget *text2;$/;"	m	struct:login_widget	file:
+text_buffer	client/client2.c	/^GtkTextBuffer *text_buffer;$/;"	v
+upload	client/client2.c	/^void upload(GtkWidget *widget, GtkFileSelection *fs)$/;"	f
+user	client/client2.c	/^}user;$/;"	v	typeref:struct:message
+user_enroll	client/client2.c	/^void user_enroll(GtkWidget *widget,gpointer data)$/;"	f
+userinfo	server/server5.c	/^struct userinfo {$/;"	s	file:
+username	client/client2.c	/^	char username[16];$/;"	m	struct:usr	file:
+username	client/client2.c	/^    char username[16];$/;"	m	struct:message	file:
+username	server/server5.c	/^    char username[16];      \/\/用户名$/;"	m	struct:message	file:
+username	server/server5.c	/^    char username[16];  \/\/用户名$/;"	m	struct:userinfo	file:
+usr	client/client2.c	/^struct usr {$/;"	s	file:
+usr	server/server5.c	/^}usr[MAXLEN];$/;"	v	typeref:struct:userinfo
+vbox	client/client2.c	/^        GtkWidget *vbox;            \/\/垂直布局盒子，包含以下三个水平布局盒子$/;"	m	struct:login_widget	file:
+verify_pwd	client/client2.c	/^        GtkWidget *verify_pwd;      \/\/确认密码$/;"	m	struct:login_widget	file:
+verify_user	client/client2.c	/^void verify_user(void)$/;"	f
+wgt	client/client2.c	/^}wgt;$/;"	v	typeref:struct:login_widget
+window	client/client2.c	/^        GtkWidget *window;          \/\/主窗体$/;"	m	struct:login_widget	file:
+wuziqi	client/client2.c	/^void wuziqi(GtkWidget *widget, gpointer data)$/;"	f
