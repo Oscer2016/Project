@@ -8,32 +8,32 @@
 
 ## 运行结果
 
-　1. 编译服务器端代码并运行
+　1. 编译服务器端代码并运行:
   
-       ![](http://on81dxgme.bkt.clouddn.com/serv.png)
+       ![](http://on81dxgme.bkt.clouddn.com/serv.png)
     
-  2. 客户端同样make编译运行
-  
-        - 登录界面
+  2. 同样make编译运行后:
+    
+        + 登录界面
         
         ![](http://on81dxgme.bkt.clouddn.com/login.png)
         
         - 注册界面
         
-             ![](http://on81dxgme.bkt.clouddn.com/register.png)
+        ![](http://on81dxgme.bkt.clouddn.com/register.png)
         
         - 主界面
         
-             ![](http://on81dxgme.bkt.clouddn.com/main.png)
+        ![](http://on81dxgme.bkt.clouddn.com/main.png)
         
         - 私聊
         
-             ![](http://on81dxgme.bkt.clouddn.com/chat.png)
+        ![](http://on81dxgme.bkt.clouddn.com/chat.png)
         
         - FTP
         
-             ![](http://on81dxgme.bkt.clouddn.com/ftp.png)
+        ![](http://on81dxgme.bkt.clouddn.com/ftp.png)
         
         - 游戏乐园
         
-             ![](http://on81dxgme.bkt.clouddn.com/game.png)
+        ![](http://on81dxgme.bkt.clouddn.com/game.png)
