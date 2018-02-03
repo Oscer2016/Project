@@ -199,6 +199,6 @@
 
 &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/statistic.png)
 
-**8. 设置中心(主要可以设置 实时监控进度图的自动刷新频率，与作品的主题)** <br>
+**8. 设置中心(主要可以设置 实时监控进度图的自动刷新频率，与作品的主题)**
 
 &emsp;&emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/setting.png)<br>
