@@ -14,7 +14,7 @@
     
   2. 同样make编译运行后:
     
-        - 登录界面
+        + 登录界面
         
         ![](http://on81dxgme.bkt.clouddn.com/login.png)
         
