@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-   &emsp;&emsp;爬虫系统，是对海量的分散的互联网数据进行采集的系统，是搜索引擎系统的基础。应大数据的需求，分布式爬虫系统是解决传统爬虫出现的无法对网页数据信息的归类和组织的问题。
+   &emsp;&nbsp;爬虫系统，是对海量的分散的互联网数据进行采集的系统，是搜索引擎系统的基础。应大数据的需求，分布式爬虫系统是解决传统爬虫出现的无法对网页数据信息的归类和组织的问题。
 分布式爬虫，对同一个网站的同类数据，进行结构化。同时，能利用分布式的软件设计方法，实现爬虫的高效采集。
 
 ## 需求分析
@@ -108,7 +108,7 @@
 （3）Observer负责监控整个系统运行情况，一开始由于任务队列中没有任务，命令全部的Worker都转换为Leader，负责爬取URL。
 随着程序的运行，任务队列中的任务逐渐增多，将Leader转换为Worker进行任务处理，保证程序爬取的效率。同时，还将监控各个节点，如果某节点失效，将动态调整Worker和Leader的数量，同时及时通知，让节点重启。在爬取过程中，Observer还监控整个程序任务进度。  
 
-4.架构图    
+ 4. 架构图    
 
 ![架构图](http://img.blog.csdn.net/20170624150958782?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWGl5b3VMaW51eF9LYW5neWlqaWU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)  
 
@@ -116,23 +116,84 @@
 
 ## 反爬策略
 
-（1） 禁止使用Cookie，让网站无法识别我们的会话信息。  
-（2） 使用IP池，通过多个代理服务器的IP进行爬取。  
-（3） 使用用户代理，通过多个User-Agent进行爬取。  
+（1）禁止使用Cookie，让网站无法识别我们的会话信息。  
+（2）使用IP池，通过多个代理服务器的IP进行爬取。  
+（3）使用用户代理，通过多个User-Agent进行爬取。  
 
 ## 测试环境
  
-内存：8GB  DDR3   
-CPU：Intel CORE i7   
-磁盘：1T HDD  
-操作系统：Linux(Deepin 15.4)  
+1. 硬件
+
+(1) 爬虫集群：阿里云主机 CPU：单核 内存：2GB 磁盘：50GB 带宽：1M
+
+(2) ZooKeeper集群：腾讯云主机  CPU：单核 内存：1GB 磁盘：20GB 带宽：1M
+
+(3) 服务端主机：阿里云主机 CPU：单核 内存：2GB 磁盘：50GB 带宽：1M
+
+(4) 主控端：目前市场一般机器即可
+
+2. 软件
+
+(1) 爬虫集群：阿里云主机 操作系统：CentOS 6（Linux内核版本3.10）Python版本2.7
+
+(2) ZooKeeper集群：腾讯云主机 操作系统：CentOS 6（Linux内核版本3.10）
+
+(3) ZooKeeper版本 >=3.4.10     JDK版本 >= 1.8 Python版本2.7
+
+(4) 服务端主机：阿里云主机 操作系统：CentOS 6（Linux内核版本3.10）Python版本2.7
+
+(5) 主控端：操作系统：Linux / Windows（64位）  JDK版本 >= 1.8
 
 ## 项目数据集测试结果
-6月 官方发布了测试数据集，我们将正文提取之后的结果通过官方评分jar包进行了测试。  
-结果如下：
+
+6月 官方发布了测试数据集，我们将正文提取之后的结果通过官方评分jar包进行了测试，结果如下：
 
 ![start](http://on81dxgme.bkt.clouddn.com/2017-06-28%2020-28-53%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 
 ![start](http://on81dxgme.bkt.clouddn.com/2017-06-28%2020-30-48%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 ![result](http://on81dxgme.bkt.clouddn.com/2017-06-28%2020-30-18%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+
+## 作品截图说明
+
+1. 全网爬取
+
+&emsp;&emsp;主要有模糊爬取与精确爬取，模糊爬取主要是对各大网站进行DFS+BFS搜索，精确爬取主要是让用户指定网站
+指定关键字的具体的搜索某一类关键物品，二者都可以设定任务的优先级。
+
+![](http://on81dxgme.bkt.clouddn.com/entire.png)
+
+2. 即时爬取
+
+&emsp;&emsp;主要时为了突发性的任务，便于用户直接爬取当前网页的信息，支持各大网站混合输入，系统自动匹配网站模
+板，同时将数据自动组织结构化。
+
+![](http://on81dxgme.bkt.clouddn.com/immediate.png)
+
+3. 资源配置(可以管理与配置从机的数量与信息)
+
+![](http://on81dxgme.bkt.clouddn.com/config.png)
+
+4. 任务中心(可以查看当前正在运行的任务，并对任务进行一系列的管理操作)
+
+![](http://on81dxgme.bkt.clouddn.com/task.png)
+
+5. 实时监控
+&emsp;&emsp;可以对所有任务的爬取情况进行实时的监控，并可以保存当前进度图以供查看，并可对进度数据图进行详细的查看。
+
+![](http://on81dxgme.bkt.clouddn.com/monitor.png)
+
+6. 数据展示
+&emsp;&emsp;可对全网爬任务所爬下来的数据自动进行结构组织化整理，方便用户查看，支持导出到本地，以便永久查看。
+
+![](http://on81dxgme.bkt.clouddn.com/show.png)
+
+7. 数据统计
+&emsp;&emsp;是对所有任务所爬取的数据进行统计的展示，可以查看到数据比重图，与任务所爬下来的详细数目。
+
+![](http://on81dxgme.bkt.clouddn.com/statistic.png)
+
+8. 设置中心(主要可以设置 实时监控进度图的自动刷新频率，与作品的主题)
+
+![](http://on81dxgme.bkt.clouddn.com/setting.png)
+
 
