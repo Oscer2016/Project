@@ -17,9 +17,11 @@
 
 ## 开发环境
 
-开发工具：Eclipse / PyCharm
-操作系统：Linux(Deepin 15.4)
-编程语言：Python 2.7
+&emsp;&emsp;开发工具：Eclipse / PyCharm
+
+&emsp;&emsp;操作系统：Linux(Deepin 15.4)
+
+&emsp;&emsp;编程语言：Python 2.7
 
 ## 总体设计思路
 
@@ -149,25 +151,26 @@
 6月 官方发布了测试数据集，我们将正文提取之后的结果通过官方评分jar包进行了测试，结果如下：
 
 ![start](http://on81dxgme.bkt.clouddn.com/2017-06-28%2020-28-53%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
-
 ![start](http://on81dxgme.bkt.clouddn.com/2017-06-28%2020-30-48%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 ![result](http://on81dxgme.bkt.clouddn.com/2017-06-28%2020-30-18%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 
 ## 作品截图说明
 
-1. 全网爬取
+1. 全网爬取<br>
 
 &emsp;&emsp;主要有模糊爬取与精确爬取，模糊爬取主要是对各大网站进行DFS+BFS搜索，精确爬取主要是让用户指定网站
-指定关键字的具体的搜索某一类关键物品，二者都可以设定任务的优先级。
+指定关键字的具体的搜索某一类关键物品，二者都可以设定任务的优先级。<br>
 
-![](http://on81dxgme.bkt.clouddn.com/entire.png)
+&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/entire.png)
 
-2. 即时爬取
+2. 即时爬取<br>
 
 &emsp;&emsp;主要时为了突发性的任务，便于用户直接爬取当前网页的信息，支持各大网站混合输入，系统自动匹配网站模
-板，同时将数据自动组织结构化。
+板，同时将数据自动组织结构化。<br>
 
-![](http://on81dxgme.bkt.clouddn.com/immediate.png)
+&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/immediate.png)
+
+
 
 3. 资源配置(可以管理与配置从机的数量与信息)
 
