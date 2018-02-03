@@ -16,9 +16,9 @@
   
         (1) 登录界面
         
-        &emsp;&emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/login.png)
+        ![](http://on81dxgme.bkt.clouddn.com/login.png)
         
-        - 注册界面
+        (2) 注册界面
         
         ![](http://on81dxgme.bkt.clouddn.com/register.png)
         
