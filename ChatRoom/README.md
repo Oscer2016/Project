@@ -16,24 +16,24 @@
     
         - 登录界面
         
-        &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/login.png)
+        &emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/login.png)
         
         - 注册界面
         
-        &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/register.png)
+        &emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/register.png)
         
         - 主界面
         
-        ![](http://on81dxgme.bkt.clouddn.com/main.png)
+        &emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/main.png)
         
         - 私聊
         
-        ![](http://on81dxgme.bkt.clouddn.com/chat.png)
+        &emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/chat.png)
         
         - FTP
         
-        ![](http://on81dxgme.bkt.clouddn.com/ftp.png)
+        &emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/ftp.png)
         
         - 游戏乐园
         
-        ![](http://on81dxgme.bkt.clouddn.com/game.png)
+        &emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/game.png)
