@@ -10,17 +10,17 @@
 
 　1. 编译服务器端代码并运行:
   
-  &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/serv.png)
+  &emsp;&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/serv.png)
     
   2. 同样make编译运行后:
     
         - 登录界面
         
-        emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/login.png)
+        &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/login.png)
         
         - 注册界面
         
-        emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/register.png)
+        &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/register.png)
         
         - 主界面
         
