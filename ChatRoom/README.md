@@ -8,15 +8,15 @@
 
 ## 运行结果
 
-　1. 编译服务器端代码并运行:
+　1. 编译服务器端代码并运行
   
        ![](http://on81dxgme.bkt.clouddn.com/serv.png)
     
-  2. 客户端同样make编译运行:
+  2. 客户端同样make编译运行
   
         - 登录界面
         
-             ![](http://on81dxgme.bkt.clouddn.com/login.png)
+        ![](http://on81dxgme.bkt.clouddn.com/login.png)
         
         - 注册界面
         
