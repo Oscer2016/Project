@@ -10,7 +10,7 @@
 
 　1. 编译服务器端代码并运行
   
-       &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/serv.png)
+       &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/serv.png)<br>
     
   2. 客户端同样make编译运行
   
