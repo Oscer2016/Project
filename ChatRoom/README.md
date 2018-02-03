@@ -9,12 +9,11 @@
 ## 运行结果
 
 　1. 编译服务器端代码并运行:
-  
-       ![](http://on81dxgme.bkt.clouddn.com/serv.png)
+ ![](http://on81dxgme.bkt.clouddn.com/serv.png)
     
   2. 同样make编译运行后:
     
-        + 登录界面
+        - 登录界面
         
         ![](http://on81dxgme.bkt.clouddn.com/login.png)
         
