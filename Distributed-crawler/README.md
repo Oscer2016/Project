@@ -32,7 +32,7 @@
 
 ## Scrapy整体架构
 
-![scrapy](http://on81dxgme.bkt.clouddn.com/scrapy_backbone.png)
+&emsp;![scrapy](http://on81dxgme.bkt.clouddn.com/scrapy_backbone.png)
 1. 引擎(Scrapy Engine)，用来处理整个系统的数据流处理，触发事务。
 
 2. 调度器(Scheduler)，用来接受引擎发过来的请求，压入队列中，并在引擎再次请求的时候返回。
@@ -53,18 +53,18 @@
 
 ### 团队分工
 
-负责人:何攀
+&emsp;负责人:何攀
 职责：
      1. 进行项目总体设计，制订项目计划。
      2. 协调成员间工作，保证项目进度。
      3. 编写爬虫代码
 
-组员1: 康艺杰
+&emsp;组员1: 康艺杰
 职责：
      1. 目设计文档的编写。
      2. 负责持久化层开发。
 
-组员2: 宫展京
+&emsp;组员2: 宫展京
 职责：
      1. 负责用户界面层开发。
      2. 负责业务逻辑层开发。
@@ -85,23 +85,25 @@
 
 ## 分布式调度算法设计
 
-1. 在本项目中主要分为两大类内容的爬取，爬取流程如下：  
+**1. 在本项目中主要分为两大类内容的爬取，爬取流程如下：  **
 
 （1）电商类: 获得入口 --› 爬取分类页 --› 爬取商品详情  
 
 （2）博客/新闻类: 获得入口 --› 爬取分类/博主列表 --› 爬取每篇新闻/博客  
 
-可以看出，这两类内容的爬虫都是先抓取大量URL，以深度优先搜索找到要爬取的内容。  
+可以看出，这两类内容的爬虫都是先抓取大量URL，以深度优先搜索找到要爬取的内容。
+<br>
 
-2. 调度模型(本项目中，一共分为三类模型)  
+**2. 调度模型(本项目中，一共分为三类模型)  **
 
 （1）Leader: 负责从入口直到分类页的爬取，将URL抽取，以任务的形式，存放到任务队列中，供Worker获取。  
 
 （2）Worker: 负责从任务队列中获取任务，爬取商品详情/博客正文/新闻正文。  
 
 （3）Observer: 负责监控整个系统运行情况，调度爬虫节点。  
+<br>
 
-3. 调度流程   
+**3. 调度流程   **
 
 （1）Leader获得入口，根据网页类型获取分类页，按照深度优先，直到找到最后一级目录，将商品详情/博客/新闻的URL作为任务插入到任务队列中。  
 
@@ -109,8 +111,9 @@
 
 （3）Observer负责监控整个系统运行情况，一开始由于任务队列中没有任务，命令全部的Worker都转换为Leader，负责爬取URL。
 随着程序的运行，任务队列中的任务逐渐增多，将Leader转换为Worker进行任务处理，保证程序爬取的效率。同时，还将监控各个节点，如果某节点失效，将动态调整Worker和Leader的数量，同时及时通知，让节点重启。在爬取过程中，Observer还监控整个程序任务进度。  
+<br>
 
- 4. 架构图    
+ **4. 架构图    **
 
 ![架构图](http://img.blog.csdn.net/20170624150958782?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWGl5b3VMaW51eF9LYW5neWlqaWU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)  
 
@@ -126,29 +129,29 @@
  
 1. 硬件
 
-(1) 爬虫集群：阿里云主机 CPU：单核 内存：2GB 磁盘：50GB 带宽：1M
+&emsp;&emsp;&nbsp;(1) 爬虫集群：阿里云主机 CPU：单核 内存：2GB 磁盘：50GB 带宽：1M
 
-(2) ZooKeeper集群：腾讯云主机  CPU：单核 内存：1GB 磁盘：20GB 带宽：1M
+&emsp;&emsp;&nbsp;(2) ZooKeeper集群：腾讯云主机  CPU：单核 内存：1GB 磁盘：20GB 带宽：1M
 
-(3) 服务端主机：阿里云主机 CPU：单核 内存：2GB 磁盘：50GB 带宽：1M
+&emsp;&emsp;&nbsp;(3) 服务端主机：阿里云主机 CPU：单核 内存：2GB 磁盘：50GB 带宽：1M
 
-(4) 主控端：目前市场一般机器即可
+&emsp;&emsp;&nbsp;(4) 主控端：目前市场一般机器即可
 
 2. 软件
 
-(1) 爬虫集群：阿里云主机 操作系统：CentOS 6（Linux内核版本3.10）Python版本2.7
+&emsp;&emsp;&nbsp;(1) 爬虫集群：阿里云主机 操作系统：CentOS 6（Linux内核版本3.10）Python版本2.7
 
-(2) ZooKeeper集群：腾讯云主机 操作系统：CentOS 6（Linux内核版本3.10）
+&emsp;&emsp;&nbsp;(2) ZooKeeper集群：腾讯云主机 操作系统：CentOS 6（Linux内核版本3.10）
 
-(3) ZooKeeper版本 >=3.4.10     JDK版本 >= 1.8 Python版本2.7
+&emsp;&emsp;&nbsp;(3) ZooKeeper版本 >=3.4.10     JDK版本 >= 1.8 Python版本2.7
 
-(4) 服务端主机：阿里云主机 操作系统：CentOS 6（Linux内核版本3.10）Python版本2.7
+&emsp;&emsp;&nbsp;(4) 服务端主机：阿里云主机 操作系统：CentOS 6（Linux内核版本3.10）Python版本2.7
 
-(5) 主控端：操作系统：Linux / Windows（64位）  JDK版本 >= 1.8
+&emsp;&emsp;&nbsp;(5) 主控端：操作系统：Linux / Windows（64位）  JDK版本 >= 1.8
 
 ## 项目数据集测试结果
 
-6月 官方发布了测试数据集，我们将正文提取之后的结果通过官方评分jar包进行了测试，结果如下：
+&emsp;&nbsp;6月 官方发布了测试数据集，我们将正文提取之后的结果通过官方评分jar包进行了测试，结果如下：
 
 ![start](http://on81dxgme.bkt.clouddn.com/2017-06-28%2020-28-53%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 ![start](http://on81dxgme.bkt.clouddn.com/2017-06-28%2020-30-48%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
@@ -156,14 +159,14 @@
 
 ## 作品截图说明
 
-1. 全网爬取<br>
+**1. 全网爬取**<br>
 
 &emsp;&emsp;主要有模糊爬取与精确爬取，模糊爬取主要是对各大网站进行DFS+BFS搜索，精确爬取主要是让用户指定网站
 指定关键字的具体的搜索某一类关键物品，二者都可以设定任务的优先级。<br>
 
 &emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/entire.png)
 
-2. 即时爬取<br>
+**2. 即时爬取**<br>
 
 &emsp;&emsp;主要时为了突发性的任务，便于用户直接爬取当前网页的信息，支持各大网站混合输入，系统自动匹配网站模
 板，同时将数据自动组织结构化。<br>
@@ -172,31 +175,38 @@
 
 
 
-3. 资源配置(可以管理与配置从机的数量与信息)
-
-![](http://on81dxgme.bkt.clouddn.com/config.png)
-
-4. 任务中心(可以查看当前正在运行的任务，并对任务进行一系列的管理操作)
-
-![](http://on81dxgme.bkt.clouddn.com/task.png)
-
-5. 实时监控
-&emsp;&emsp;可以对所有任务的爬取情况进行实时的监控，并可以保存当前进度图以供查看，并可对进度数据图进行详细的查看。
-
-![](http://on81dxgme.bkt.clouddn.com/monitor.png)
-
-6. 数据展示
-&emsp;&emsp;可对全网爬任务所爬下来的数据自动进行结构组织化整理，方便用户查看，支持导出到本地，以便永久查看。
-
-![](http://on81dxgme.bkt.clouddn.com/show.png)
-
-7. 数据统计
-&emsp;&emsp;是对所有任务所爬取的数据进行统计的展示，可以查看到数据比重图，与任务所爬下来的详细数目。
-
-![](http://on81dxgme.bkt.clouddn.com/statistic.png)
-
-8. 设置中心(主要可以设置 实时监控进度图的自动刷新频率，与作品的主题)
-
-![](http://on81dxgme.bkt.clouddn.com/setting.png)
+**3. 资源配置(可以管理与配置从机的数量与信息)**<br>
 
 
+&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/config.png)
+
+
+**4. 任务中心(可以查看当前正在运行的任务，并对任务进行一系列的管理操作)**<br>
+
+
+&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/task.png)
+
+
+**5. 实时监控**<br>
+
+
+&emsp;&emsp;可以对所有任务的爬取情况进行实时的监控，并可以保存当前进度图以供查看，并可对进度数据图进行详细的查看。<br>
+
+
+&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/monitor.png)
+
+**6. 数据展示**<br>
+
+&emsp;&emsp;可对全网爬任务所爬下来的数据自动进行结构组织化整理，方便用户查看，支持导出到本地，以便永久查看。<br>
+
+&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/show.png)
+
+**7. 数据统计**<br>
+
+&emsp;&emsp;是对所有任务所爬取的数据进行统计的展示，可以查看到数据比重图，与任务所爬下来的详细数目。<br>
+
+&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/statistic.png)
+
+**8. 设置中心(主要可以设置 实时监控进度图的自动刷新频率，与作品的主题)** <br>
+
+&emsp;&emsp;![](http://on81dxgme.bkt.clouddn.com/setting.png)
